@@ -7,7 +7,7 @@ clean:
 	docker image rm theia-plantuml
 
 start:
-	docker-compose up
+	docker-compose up -d
 
 stop:
 	docker-compose down
