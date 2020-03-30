@@ -1,0 +1,7 @@
+{
+  "plantuml.webservice": "//localhost:8080/svg/",
+  "plantuml.monochrome": true,
+  "preview.openByDefault": false,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2
+}

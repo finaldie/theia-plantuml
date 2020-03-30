@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  theia:
+    image: "theia-plantuml-client"
+    container_name: theia-plantuml
+    depends_on:
+      - plantuml
+    ports:
+      - "3001:3000"
+
+  plantuml:
+    image: "plantuml/plantuml-server"
+    container_name: plantuml-server
+    environment:
+      - PLANTUML_LIMIT_SIZE=40960
+    ports:
+      - "127.0.0.1:8080:8080"
+
