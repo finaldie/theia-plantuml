@@ -1,5 +1,5 @@
-# Theia-Plantuml
-================
+Theia-Plantuml
+====
 
 Self hosted Theia Clould IDE (plantuml extension enabled) with plantuml-server backend.
 
