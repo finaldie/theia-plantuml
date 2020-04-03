@@ -3,6 +3,8 @@
 
 Self hosted Theia Clould IDE (plantuml extension enabled) with plantuml-server backend.
 
+![theia-plantuml](https://github.com/finaldie/misc/blob/master/articals/theia-plantuml/theia-plantuml.png)
+
 ## Prep
 * Install Docker
 
