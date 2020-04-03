@@ -6,11 +6,13 @@ RUN git clone --single-branch --branch master --depth 1 --recursive git://github
   && cd /build \
   && yarn
 
-VOLUME /workspace
+VOLUME /home/project
 WORKDIR /build
-EXPOSE 3000
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+  gettext-base \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY ./docker-entrypoint-theia.sh /usr/bin/
-COPY ./settings.json /root/.theia/
 
 ENTRYPOINT ["docker-entrypoint-theia.sh"]

@@ -1,10 +1,12 @@
+IMAGE_NAME := theia-plantuml
+
 build:
 	docker pull theiaide/theia-cpp:next
 	docker pull plantuml/plantuml-server
-	docker build --rm -t theia-plantuml-client .
+	docker build --rm -t $(IMAGE_NAME) .
 
 clean:
-	docker image rm theia-plantuml
+	docker image rm $(IMAGE_NAME)
 
 start:
 	docker-compose up -d

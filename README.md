@@ -13,4 +13,4 @@ make start
 ```
 
 ## Enjoy
-Open browser, go to **http://localhost:3001**, start planting!!!
+Open browser, go to **http://localhost:3030**, start planting!!!
