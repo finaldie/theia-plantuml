@@ -7,12 +7,14 @@ build:
 
 clean:
 	docker image rm $(IMAGE_NAME)
+	docker system prune
 
 start:
 	docker-compose up -d
 
 stop:
 	docker-compose down
+	docker system prune
 
 ps:
 	docker-compose ps
